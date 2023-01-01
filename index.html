@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1 class="title">Конвертер валют на JavaScript</h1>
+            <div class="inner-container">
+                <div class="inner-converter">
+                    <div id="menu1" class="menu-currency">
+                        <div data-value = "RUR" class="menu-item">RUR</div>
+                        <div data-value = "USD" class="menu-item">USD</div>
+                        <div data-value = "EUR" class="menu-item">EUR</div>
+                        <div data-value = "GBP" class="menu-item">GBP</div>
+                    </div>
+                    <div class="input-area">
+                        <input class="input" id="input1" type="text" maxlength="12" placeholder="У меня есть">
+                        <div class="input-area__rate input-area__rate-to"></div>
+                    </div>
+                </div>
+                <div class="inner-converter">
+                    <div id="menu2" class="menu-currency">
+                        <div data-value = "RUR2" class="menu-item">RUR</div>
+                        <div data-value = "USD2" class="menu-item">USD</div>
+                        <div data-value = "EUR2" class="menu-item">EUR</div>
+                        <div data-value = "GBP2" class="menu-item">GBP</div>
+                    </div>
+                    <div class="input-area">
+                        <input class="input" id="input2" type="text" placeholder="Я получу" readonly>
+                        <div class="input-area__rate input-area__rate-from"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
